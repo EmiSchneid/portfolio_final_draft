@@ -1,0 +1,696 @@
+img {
+    border: solid 3px darkgray;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+nav {
+    color: rgb(190, 190, 190);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(190, 190, 190);
+}
+
+nav li {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 10px 20px 10px;
+    text-decoration: none;
+    width: 7%;
+}
+
+nav li a {
+    padding: 15px 15px;
+    margin: 0px 10px;
+}
+
+nav a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav a:link {text-decoration: none;}
+
+nav li a:hover:not(.active) {
+    background-color: lightslategray;
+}
+
+.active{
+	/* background: white; */
+    text-transform: uppercase;
+	/* text-align: center; */
+    background-color: #ffffff;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skip {
+    position: absolute;
+	left: -1000px;
+}
+
+.skip:focus {
+    left: 10px;
+}
+
+h1 {
+    padding: 50px 0px 30px 0px;
+    margin: 0px 50px 0px 50px;
+    background-image: url("../images/moon_3.jpg");
+    background-color: black;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 22px;
+    margin: 1% 5%;
+}
+
+#last_p {
+    margin: auto 5% 3% 5%;
+}
+
+main {
+    margin: 0px 50px 0px 50px;
+}
+
+main li {
+    font-size: 22px;
+    margin: 1% 0;
+}
+
+main ul {
+    margin: 1% 4%;
+}
+
+h2 {
+    margin: 3% 5% 1% 5%;
+}
+
+.container {
+    position: relative;
+    width: 20%;
+}
+
+.image {
+    /* display: inline; */
+    margin: 0;
+    padding: 0;
+    /* can't figure out why they're acting like block elements */
+}
+
+blockquote {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 22px;
+}
+
+#contact_footer {
+    margin-top: 1250px;
+}
+
+#about_footer {
+    margin-top: 350px;
+}
+
+#contact {
+    font-size: 25px;
+}
+
+#instagram-text {
+    font-size: 25px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 20px 0px 0px;
+    overflow: hidden;
+    background-color: #b4b4b4;
+    align-content: space-around;
+}
+
+footer li {
+    display: flex;
+    font-size: 15px;
+    padding: 20px 10px 20px 10px;
+    margin: auto 25px auto auto;
+    text-decoration: none;
+    width: 7%;
+}
+
+form {
+    margin-top: 100px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 18px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #358038;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 18px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+#img1 {
+    grid-row: 1 / 2;
+}
+
+#caption_tip1 {
+    grid-row: 2 / 3;
+}
+
+#img2 {
+    grid-row: 3 / 4;
+}
+
+#caption_tip2 {
+    grid-row: 4 / 5;
+}
+
+#img3 {
+    grid-row: 5 / 6;
+}
+
+#caption_tip3 {
+    grid-row: 6 / 7;
+}
+
+#img4 {
+    grid-row: 7 / 8;
+}
+
+#caption_tip4 {
+    grid-row: 8 / 9;
+}
+
+#img5 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+}
+
+#caption_tip5 {
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
+}
+
+#img6 {
+    grid-column: 1 / 2;
+    grid-row: 11 / 12;
+}
+
+#caption_tip6 {
+    grid-column: 1 / 2;
+    grid-row: 12 / 13;
+}
+
+#img7 {
+    grid-column: 1 / 2;
+    grid-row: 13 / 14;
+}
+
+#caption_tip7 {
+    grid-column: 1 / 2;
+    grid-row: 14 / 15;
+}
+
+#img8 {
+    grid-column: 1 / 2;
+    grid-row: 15 / 16;
+}
+
+#caption_tip8 {
+    grid-column: 1 / 2;
+    grid-row: 16 / 17;
+}
+
+#img9 {
+    grid-column: 1 / 2;
+    grid-row: 17 / 18;
+}
+
+#caption_tip9 {
+    grid-column: 1 / 2;
+    grid-row: 18 / 19;
+}
+
+@keyframes image-grow {
+    from {width: 20%}
+    to {width: 90%;}
+}
+.image-animation {
+    animation-name: image-grow;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+
+body {
+    margin: 0px;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    background-image: url("../images/trees_milkyway.jpg");
+
+    /* Full height */
+    min-height: 2000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+#parallax-overlay {
+    display: flex;
+    flex-direction: column;
+    height: 1150px;
+    background-color: white;
+    padding: 50px 3px 3px 3px;
+    font-size: 15px;
+}
+
+#me_skye {
+    width: 93%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .image-animation {
+      animation: none;
+    }
+
+    .flip-card .flip-card-inner {
+        transition: transform 0.0000001s;;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    /* width: 100%;
+    height: 600px; */
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #fff;
+    color: black;
+}
+
+  /* Style the back side */
+.flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin: 70px 30px;
+}
+
+/* This code doesn't move the flip card background so it looks misaligned and backgrounds overlap with photos in spots */
+/* .flex-container div {
+    margin: 15px;
+}
+
+.flip-card {
+    margin: 15px;
+} */
+
+.flex-dog-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.dog_img {
+    width: 100%;
+}
+
+/* @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) { */
+@media screen and (min-width: 620px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-column-gap: 30px;
+    }
+
+    #img1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #caption_tip1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #img2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #caption_tip2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #img3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #caption_tip3 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #img4 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #caption_tip4 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    #img5 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    #caption_tip5 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    #img6 {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    #caption_tip6 {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+    }
+
+    #img7 {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+
+    #caption_tip7 {
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+    }
+
+    #img8 {
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
+
+    #caption_tip8 {
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+    }
+
+    #img9 {
+        grid-column: 1 / 2;
+        grid-row: 9 / 10;
+    }
+
+    #caption_tip9 {
+        grid-column: 2 / 3;
+        grid-row: 9 / 10;
+    }
+
+    .flex-dog-container div {
+        flex-basis: 290px;
+        align-content: center;
+        align-content: space-around;
+        margin: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: #b4b4b4;
+    }
+
+    #end-of-nav {
+        margin: 0px 50px 0px 0px;
+    }
+
+    #parallax-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 900px;
+        background-color: white;
+        padding: 50px 3px 3px 3px;
+        font-size: 15px;
+    }
+
+    #me_skye {
+        width: 475px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 30px;
+    }
+
+    #img1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #caption_tip1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #img2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #caption_tip2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #img3 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    #caption_tip3 {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #img4 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #caption_tip4 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #img5 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #caption_tip5 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    #img6 {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    #caption_tip6 {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+    #img7 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    #caption_tip7 {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    #img8 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    #caption_tip8 {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+    }
+
+    #img9 {
+        grid-column: 3 / 4;
+        grid-row: 5 / 6;
+    }
+
+    #caption_tip9 {
+        grid-column: 3 / 4;
+        grid-row: 6 / 7;
+    }
+
+    .flex-dog-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .flex-dog-container div {
+        flex-basis: 350px;
+        align-content: center;
+        align-content: space-around;
+        margin: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: #b4b4b4;
+    }
+
+    #end-of-nav {
+        margin: 0px 50px 0px 0px;
+    }
+
+    #parallax-overlay {
+        height: 320px;
+        background-color: white;
+        padding: 50px 3px 3px 3px;
+        font-size: 20px;
+    }
+
+    #parallax-overlay {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 500px;
+        background-color: white;
+        padding: 50px 3px 3px 3px;
+        font-size: 15px;
+    }
+
+    #me_skye {
+        width: 350px;
+    }
+
+}
